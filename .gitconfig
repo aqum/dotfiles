@@ -1,0 +1,11 @@
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore_global
+[user]
+  name = Adam Florczak
+  email = adam.florczak@me.com
+[push]
+  followTags = true
+  default = current
+[rerere]
+  enabled = true
