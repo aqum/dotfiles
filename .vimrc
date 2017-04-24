@@ -244,7 +244,7 @@ set exrc
 set secure
 
 " gui options
-set guifont=Hack\ Regular:h12
+set guifont=Hack
 " hide scrollbars in macvim
 set guioptions-=T
 set guioptions-=r
