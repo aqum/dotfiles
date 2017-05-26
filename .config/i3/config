@@ -183,14 +183,15 @@ mode "Touchpad (E)nable (D)isable" {
 bindsym $mod+t mode "Touchpad (E)nable (D)isable"
 
 # Monitor controls
-mode "Display (O)ffice (I)nternal" {
+mode "Display (O)ffice (I)nternal (M)irroring" {
     bindsym o exec "~/.screenlayout/external-dp-left.sh" mode "default"
     bindsym i exec "~/.screenlayout/internal-only.sh" mode "default"
+    bindsym m exec "~/.screenlayout/mirroring.sh" mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+o mode "Display (O)ffice (I)nternal"
+bindsym $mod+o mode "Display (O)ffice (I)nternal (M)irroring"
 
 # Function keys
 bindsym $mod+F12 exec "xbacklight -10"
@@ -208,5 +209,6 @@ exec "xset r rate 250 25"
 # Assign application to workspaces
 assign [class="Slack"] 9
 assign [class="Code"] 2
+assign [class="Gvim"] 2
 assign [class="spotify"] 7
 assign [class="Google-chrome"] 1
