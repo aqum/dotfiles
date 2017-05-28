@@ -42,6 +42,7 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'taiansu/nerdtree-ag'
 Plugin 'ap/vim-css-color'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -253,3 +254,5 @@ set guioptions-=L
 " remove bell sound
 set noerrorbells 
 set novisualbell
+
+let g:jsx_ext_required = 0
