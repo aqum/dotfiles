@@ -1,6 +1,6 @@
 [core]
   editor = vim
-  excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore
 [user]
   name = Adam Florczak
   email = adam.florczak@me.com
@@ -9,3 +9,5 @@
   default = current
 [rerere]
   enabled = true
+[rebase]
+  autosquash = true
