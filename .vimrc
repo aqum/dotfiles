@@ -28,21 +28,17 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'lambdatoast/elm.vim'
 Plugin 'tyru/open-browser.vim'
 Plugin 'tyru/open-browser-github.vim'
-Plugin 'rking/ag.vim'
 Plugin 'slashmili/alchemist.vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'taiansu/nerdtree-ag'
 Plugin 'ap/vim-css-color'
 Plugin 'mxw/vim-jsx'
+Plugin 'brooth/far.vim'
+Plugin 'rking/ag.vim'
+Plugin 'taiansu/nerdtree-ag'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -196,6 +192,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_html_checkers = ['']
 let g:syntastic_scss_checkers = ['']
 
@@ -246,13 +243,14 @@ set secure
 
 " gui options
 set guifont=Hack
-" hide scrollbars in macvim
+" hide toolbars and menus in macvim/gvim
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
+set guioptions-=m
 
 " remove bell sound
-set noerrorbells 
+set noerrorbells
 set novisualbell
 
 let g:jsx_ext_required = 0
