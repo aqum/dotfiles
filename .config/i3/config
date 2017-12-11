@@ -183,15 +183,16 @@ mode "Touchpad (E)nable (D)isable" {
 bindsym $mod+t mode "Touchpad (E)nable (D)isable"
 
 # Monitor controls
-mode "Display (O)ffice (I)nternal (M)irroring" {
+mode "Display (O)ffice (I)nternal (M)irroring (H)ome" {
     bindsym o exec "~/.screenlayout/external-dp-left.sh" mode "default"
     bindsym i exec "~/.screenlayout/internal-only.sh" mode "default"
     bindsym m exec "~/.screenlayout/mirroring.sh" mode "default"
+    bindsym h exec "~/.screenlayout/home.sh" mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+o mode "Display (O)ffice (I)nternal (M)irroring"
+bindsym $mod+o mode "Display (O)ffice (I)nternal (M)irroring (H)ome"
 
 # Function keys
 bindsym $mod+F12 exec "xbacklight -10"

@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 12,
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Solarized Dark",
+    "keyboard.dispatch": "keyCode",
+    "vim.leader": ",",
+    "vim.easymotion": true,
+    "vim.useCtrlKeys": true,
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["g", "q"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "typescript.check.tscVersion": false,
+    "window.zoomLevel": 0,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.minimap.enabled": false,
+    "workbench.panel.location": "bottom",
+    "editor.multiCuddrsorMoxxdifier": "ctrlCmxd",
+    "editor.tabSize": 2,
+    "vim.disableExtension": false,
+    "files.insertFinalNewline": true
+}
