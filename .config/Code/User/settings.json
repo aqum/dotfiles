@@ -31,5 +31,10 @@
     "editor.multiCuddrsorMoxxdifier": "ctrlCmxd",
     "editor.tabSize": 2,
     "vim.disableExtension": false,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "window.menuBarVisibility": "toggle"
 }
