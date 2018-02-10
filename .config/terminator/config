@@ -1,0 +1,26 @@
+[global_config]
+  borderless = True
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    show_titlebar = False
+    background_color = "#002b36"
+    background_darkness = 0.92
+    background_image = None
+    background_type = transparent
+    cursor_color = "#eee8d5"
+    font = Monospace 11
+    foreground_color = "#e6e0da"
+    icon_bell = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    split_to_group = True
