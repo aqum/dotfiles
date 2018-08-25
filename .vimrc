@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'ervandew/supertab'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
@@ -56,7 +55,6 @@ filetype plugin indent on    " required
 " Colors
 syntax enable
 set background=dark
-colorscheme solarized
 
 " Lazy redraw
 set lazyredraw

@@ -7,28 +7,8 @@
     "vim.leader": ",",
     "vim.easymotion": true,
     "vim.useCtrlKeys": true,
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": ["g", "q"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                },
-                {
-                    "command": "workbench.action.closeActiveEditor",
-                    "args": []
-                }
-            ]
-        }
-    ],
-    "typescript.check.tscVersion": false,
     "window.zoomLevel": 0,
-    "vim.disableAnnoyingNeovimMessage": true,
     "editor.minimap.enabled": false,
-    "workbench.panel.location": "bottom",
-    "editor.multiCuddrsorMoxxdifier": "ctrlCmxd",
     "editor.tabSize": 2,
     "vim.disableExtension": false,
     "files.insertFinalNewline": true,
@@ -36,5 +16,14 @@
         80,
         120
     ],
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "workbench.statusBar.feedback.visible": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": true,
+    "prettier.singleQuote": true,
+    "breadcrumbs.enabled": true,
+    "javascript.preferences.quoteStyle": "single"
 }

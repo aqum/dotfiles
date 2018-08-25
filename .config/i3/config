@@ -113,12 +113,12 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 mode "(L)ock (E)xit (R)eload (S)uspend (P)oweroff" {
-    bindsym l exec "gnome-screensaver-command --lock && xset dpms force off" mode "default"
+    bindsym l exec "i3lock -c 000000" mode "default"
     bindsym e exit
     # restart just i3wm
     bindsym r restart
-    bindsym s exec "gnome-screensaver-command --lock && sudo pm-suspend" mode "default"
-    bindsym p exec "sudo shutdown -h now"
+    bindsym s exec "i3lock -c 000000 && systemctl suspend" mode "default"
+    bindsym p exec "systemctl poweroff"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -184,7 +184,7 @@ bindsym $mod+t mode "Touchpad (E)nable (D)isable"
 
 # Monitor controls
 mode "Display (O)ffice (I)nternal (M)irroring (H)ome" {
-    bindsym o exec "~/.screenlayout/external-dp-left.sh" mode "default"
+    bindsym o exec "~/.screenlayout/office.sh" mode "default"
     bindsym i exec "~/.screenlayout/internal-only.sh" mode "default"
     bindsym m exec "~/.screenlayout/mirroring.sh" mode "default"
     bindsym h exec "~/.screenlayout/home.sh" mode "default"
@@ -211,5 +211,5 @@ exec "xset r rate 250 25"
 assign [class="Slack"] 9
 assign [class="Code"] 2
 assign [class="Gvim"] 2
-assign [class="spotify"] 7
+assign [class="Spotify"] 7
 assign [class="Google-chrome"] 1
