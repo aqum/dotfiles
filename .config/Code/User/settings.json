@@ -25,5 +25,40 @@
     "telemetry.enableCrashReporter": true,
     "prettier.singleQuote": true,
     "breadcrumbs.enabled": true,
-    "javascript.preferences.quoteStyle": "single"
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.titleBarStyle": "native",
+    "editor.fontFamily": "Hack,  'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vim.easymotionMarkerFontFamily": "Hack",
+    "vim.easymotionMarkerFontSize": "12",
+    "[dockerfile]": {
+        "editor.defaultFormatter": "PeterJausovec.vscode-docker"
+    },
+    "showMusicMetrics": false,
+    "showGitMetrics": false,
+    "showWeeklyRanking": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.tree.renderIndentGuides": "always",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "html.mirrorCursorOnMatchingTag": false
 }

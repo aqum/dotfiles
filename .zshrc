@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git wd)
+plugins=(git wd npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,24 @@ export PATH=/snap/bin:~/.local/bin:$PATH
 alias sound="pavucontrol"
 alias wifi="nmtui"
 alias c="xclip -selection clipboard"
+alias screensaveroff="xset s off"
+
+decode_base64_url() {
+  local len=$((${#1} % 4))
+  local result="$1"
+  if [ $len -eq 2 ]; then result="$1"'=='
+  elif [ $len -eq 3 ]; then result="$1"'='
+  fi
+  echo "$result" | tr '_-' '/+' | openssl enc -d -base64
+}
+
+decode_jwt(){
+   decode_base64_url $(echo -n $2 | cut -d "." -f $1) | jq .
+}
+
+# Decode JWT header
+alias jwth="decode_jwt 1"
+
+# Decode JWT Payload
+alias jwtp="decode_jwt 2"
+
